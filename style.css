@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(220, 224, 238);
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    font-family: '@Microsoft YaHei UI Light';
+    background: #fafafa;
+    box-shadow:
+        0 7px 30px -10px rgba(150,170,180,0.5);
+    border-radius: 0 0 20px 20px;
+
+}
+.card img {
+    width: 100%;
+    display: block;
+    transition: 2s;
+    transform: scale(1.02);
+}
+.card #menu {
+    position: absolute;
+    color: white;
+    font-size: x-large;
+    top: 20px; right: 20px;
+    z-index: 1;
+}
+
+
+.poster {
+    position: absolute;
+    width: 200px;
+    left: 40px;
+    top: -40px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 30px 30px; 
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+.poster:hover img {
+    transform: scale(1.1);
+}
+
+
+.header {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    filter: blur(2px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    overflow: hidden;
+
+}
+
+/* .video {
+    position:absolute;
+    top: -20px;
+    width: 102%;
+} */
+
+.card .content {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+.content > * {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+    font-weight: bold;
+    
+}
+.content span {
+    background: rgba(137, 43, 226, 0.774);
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.content button {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background: rgb(194, 43, 63);
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+.content button:hover {
+    background: rgb(88, 19, 29);
+}
+.content .title {
+    color: rgb(208, 255, 0);
+}
+.content .details {
+    color: black;
+    color: white;
+}
+.content .netflix > * {
+    margin-right: 10px;
+    font-size: 15px;
+}
+.content .ratings * { margin-right: 10px; }
+.content img {
+    display: inline-block;
+    width: 38px;
+}
+
+
+.about {
+    padding: 10px 20px;
+    font-size: large;
+}
+
+
+.cast {
+    background-image: linear-gradient(to right, #e9e9e9, #fafafa);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+   
+}
+.cast img {
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 100%;
+    transition: .2s;
+    cursor: pointer;
+    
+}
+.cast img:hover {
+    transform: scale(1.1);
+}
+
+
+button#watch {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: none;
+    color: white;
+    font-size: large;
+    background-image: linear-gradient(to right,
+    rgb(26, 116, 104), rgb(20, 224, 197));
+    float: right;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+button#watch:hover {
+    background: rgb(26, 116, 104);
+}
